@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import print_function
 import sys
 import os
 import console
@@ -10,7 +11,7 @@ def process_arg(arg):
     print('Nope, no argument support yet')
 
 
-if __name__ == '__main__':
+def main():
     has_changes = False
     has_data = False
     is_authorized = False
@@ -35,3 +36,6 @@ if __name__ == '__main__':
         if opt is None or opt == 'q':
             if not has_changes or console.yes_no('You have unsaved changes. Quit?'):
                 break
+
+if __name__ == '__main__':
+    main()

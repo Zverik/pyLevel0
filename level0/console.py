@@ -1,4 +1,4 @@
-# A simple 1-2-3 console menu
+from __future__ import print_function
 import readline
 from collections import OrderedDict
 
