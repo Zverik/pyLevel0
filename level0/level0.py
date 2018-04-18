@@ -2,7 +2,7 @@
 from __future__ import print_function
 import sys
 import os
-import console
+from . import console
 from . import __version__
 
 
