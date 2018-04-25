@@ -10,6 +10,10 @@ setup(
     author=level0.__author__,
     author_email='ilya@zverev.info',
     url='https://github.com/Zverik/pyLevel0',
+    install_requires=[
+        'requests',
+        'appdirs',
+    ],
     entry_points={
         'console_scripts': [
             'level0 = level0.level0:main',

@@ -1,6 +1,7 @@
 from __future__ import print_function
 import sys
 import os
+from appdirs import AppDirs
 from . import console
 from . import __version__
 
@@ -14,6 +15,7 @@ def main():
     has_changes = False
     has_data = False
     is_authorized = False
+    dirs = AppDirs('pyLevel0')
 
     if len(sys.argv) > 1:
         process_arg(sys.argv[1])
