@@ -3,6 +3,7 @@ import sys
 import os
 from appdirs import AppDirs
 from . import console
+from . import osmapi
 from . import __version__
 
 
@@ -14,8 +15,8 @@ def process_arg(arg):
 def main():
     has_changes = False
     has_data = False
-    is_authorized = False
     dirs = AppDirs('pyLevel0')
+    api = osmapi.OsmApi(dirs.user_data_dir)
 
     if len(sys.argv) > 1:
         process_arg(sys.argv[1])
